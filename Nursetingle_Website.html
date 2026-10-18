@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursetingle Id | Teman Belajar, Berkembang & Berkarier di Dunia Keperawatan</title>
+    <meta name="description"
+        content="Platform edukasi keperawatan digital terdepan di Indonesia. Penyedia e-book keperawatan praktis, persiapan UKOM, panduan OSCE, catatan klinis, dan materi NICU/PICU.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            /* Palette Brand Nursetingle */
+            --teal-50: #f0fdfc;
+            --teal-100: #ccfbf1;
+            --teal-200: #99f6e4;
+            --teal-400: #2dd4bf;
+            --teal-500: #14b8a6;
+            --teal-600: #0d9488;
+            --teal-700: #0f766e;
+            --teal-800: #115e59;
+            --teal-900: #134e4a;
+
+            --brand-teal: #1cb5af;
+            --brand-teal-dark: #12837e;
+            --brand-peach: #f9b054;
+            --brand-peach-hover: #ea9d3c;
+            --brand-peach-soft: #fef7ed;
+
+            --slate-900: #0f172a;
+            --slate-800: #1e293b;
+            --slate-700: #334155;
+            --slate-600: #475569;
+            --slate-500: #64748b;
+            --slate-200: #e2e8f0;
+            --slate-100: #f1f5f9;
+            --slate-50: #f8fafc;
+            --white: #ffffff;
+
+            --shadow-sm: 0 2px 8px -2px rgba(15, 23, 42, 0.05);
+            --shadow-md: 0 10px 25px -5px rgba(20, 184, 166, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+            --shadow-lg: 0 20px 35px -10px rgba(20, 184, 166, 0.15), 0 10px 15px -5px rgba(15, 23, 42, 0.04);
+            --shadow-hover: 0 25px 45px -12px rgba(20, 184, 166, 0.25);
+            --radius-sm: 10px;
+            --radius-md: 18px;
+            --radius-lg: 28px;
+            --radius-full: 9999px;
+
+            --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fafcfe;
+            color: var(--slate-700);
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .brand-font {
+            font-family: 'Outfit', sans-serif;
+            color: var(--slate-900);
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* --- Header & Glass Navigation --- */
+        .header-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+        }
+
+        .brand-logo-img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(28, 181, 175, 0.25);
+            border: 2px solid var(--white);
+            transition: var(--transition);
+        }
+
+        .brand-logo-wrap:hover .brand-logo-img {
+            transform: rotate(10deg) scale(1.05);
+        }
+
+        .brand-name-text {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--brand-teal);
+            letter-spacing: -0.5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name-text span {
+            font-size: 11px;
+            color: var(--slate-500);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-top: -3px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-item a {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--slate-600);
+            transition: var(--transition);
+            position: relative;
+            padding: 6px 0;
+        }
+
+        .nav-item a:hover,
+        .nav-item a.active {
+            color: var(--brand-teal);
+        }
+
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2.5px;
+            background: linear-gradient(90deg, var(--brand-teal), var(--brand-peach));
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .nav-item a:hover::after,
+        .nav-item a.active::after {
+            width: 100%;
+        }
+
+        .nav-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+            transition: var(--transition);
+        }
+
+        .nav-cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.45);
+            color: var(--white);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--slate-800);
+            cursor: pointer;
+        }
+
+        /* --- Global Buttons --- */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--brand-peach), var(--brand-peach-hover));
+            color: var(--slate-900);
+            font-weight: 700;
+            font-size: 15px;
+            padding: 14px 30px;
+            border-radius: var(--radius-full);
+            box-shadow: 0 10px 25px -5px rgba(249, 176, 84, 0.4);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 30px -5px rgba(249, 176, 84, 0.55);
+            color: var(--slate-900);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--brand-teal);
+            font-weight: 700;
+            font-size: 15px;
+            padding: 14px 28px;
+            border-radius: var(--radius-full);
+            border: 2px solid var(--brand-teal);
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-secondary:hover {
+            background: var(--brand-teal);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(28, 181, 175, 0.25);
+        }
+
+        .btn-sm {
+            padding: 9px 18px;
+            font-size: 13.5px;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            position: relative;
+            padding: 80px 24px 100px;
+            background: radial-gradient(circle at 10% 20%, rgba(204, 251, 241, 0.55) 0%, rgba(254, 247, 237, 0.45) 45%, #ffffff 90%);
+            overflow: hidden;
+        }
+
+        .hero-blob-1,
+        .hero-blob-2 {
+            position: absolute;
+            filter: blur(80px);
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        .hero-blob-1 {
+            width: 450px;
+            height: 450px;
+            background: rgba(28, 181, 175, 0.2);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+
+        .hero-blob-2 {
+            width: 400px;
+            height: 400px;
+            background: rgba(249, 176, 84, 0.25);
+            border-radius: 50%;
+            bottom: -50px;
+            left: -100px;
+        }
+
+        .hero-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            align-items: center;
+            gap: 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(28, 181, 175, 0.12);
+            color: var(--brand-teal-dark);
+            border: 1px solid rgba(28, 181, 175, 0.3);
+            padding: 6px 16px;
+            border-radius: var(--radius-full);
+            font-size: 13.5px;
+            font-weight: 700;
+            width: fit-content;
+            animation: pulseSoft 3s infinite ease-in-out;
+        }
+
+        @keyframes pulseSoft {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.03);
+            }
+        }
+
+        .hero-title {
+            font-size: 46px;
+            letter-spacing: -1px;
+            color: var(--slate-900);
+        }
+
+        .hero-title .gradient-text {
+            background: linear-gradient(120deg, var(--brand-teal), #0f766e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-title .peach-highlight {
+            position: relative;
+            color: #d97706;
+            white-space: nowrap;
+        }
+
+        .hero-desc {
+            font-size: 17.5px;
+            color: var(--slate-600);
+            line-height: 1.8;
+            max-width: 620px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 10px;
+        }
+
+        .hero-features-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .chip-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            padding: 8px 14px;
+            border-radius: var(--radius-full);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--slate-700);
+            border: 1px solid var(--slate-200);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .chip-item i {
+            color: var(--brand-teal);
+        }
+
+        /* Hero Visual & Floating Cards */
+        .hero-visual-wrap {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-main-card {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 30px 60px -15px rgba(28, 181, 175, 0.3);
+            border: 4px solid var(--white);
+            max-width: 440px;
+            background: var(--white);
+            transition: var(--transition);
+        }
+
+        .hero-main-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .hero-main-card img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-floating-badge {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(12px);
+            padding: 12px 18px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 2;
+            animation: floatBadge 4s ease-in-out infinite alternate;
+        }
+
+        .badge-left {
+            top: 25px;
+            left: -35px;
+        }
+
+        .badge-right {
+            bottom: 35px;
+            right: -30px;
+            animation-delay: 2s;
+        }
+
+        @keyframes floatBadge {
+            0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(-12px);
+            }
+        }
+
+        .badge-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--white);
+        }
+
+        .badge-icon.teal {
+            background: linear-gradient(135deg, var(--brand-teal), #0f766e);
+        }
+
+        .badge-icon.peach {
+            background: linear-gradient(135deg, var(--brand-peach), #ea9d3c);
+        }
+
+        .badge-text-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--slate-900);
+            line-height: 1.2;
+        }
+
+        .badge-text-sub {
+            font-size: 11.5px;
+            color: var(--slate-500);
+            margin-top: 2px;
+        }
+
+        /* --- Quick Highlight Bar --- */
+        .highlight-bar-section {
+            background: var(--white);
+            border-top: 1px solid var(--slate-200);
+            border-bottom: 1px solid var(--slate-200);
+            padding: 30px 24px;
+        }
+
+        .highlight-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .highlight-box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 18px;
+            border-radius: var(--radius-md);
+            background: var(--slate-50);
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .highlight-box:hover {
+            background: var(--teal-50);
+            border-color: var(--teal-200);
+            transform: translateY(-3px);
+        }
+
+        .highlight-icon-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(28, 181, 175, 0.12);
+            color: var(--brand-teal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        .highlight-info h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 2px;
+        }
+
+        .highlight-info p {
+            font-size: 12.5px;
+            color: var(--slate-500);
+            line-height: 1.35;
+        }
+
+        /* --- Sections Styling --- */
+        .section-wrap {
+            padding: 90px 24px;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 50px;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: rgba(28, 181, 175, 0.12);
+            color: var(--brand-teal-dark);
+            font-weight: 700;
+            font-size: 12.5px;
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 34px;
+            color: var(--slate-900);
+            margin-bottom: 14px;
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: var(--slate-500);
+            line-height: 1.7;
+        }
+
+        /* --- Catalog Section (Katalog E-Book) --- */
+        .catalog-section {
+            background: #fbfdff;
+        }
+
+        .catalog-controls {
+            max-width: 1240px;
+            margin: 0 auto 36px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .category-filter-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tab-btn {
+            background: var(--white);
+            border: 1px solid var(--slate-200);
+            padding: 9px 20px;
+            border-radius: var(--radius-full);
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--slate-600);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn:hover {
+            border-color: var(--brand-teal);
+            color: var(--brand-teal);
+        }
+
+        .tab-btn.active {
+            background: var(--brand-teal);
+            color: var(--white);
+            border-color: var(--brand-teal);
+            box-shadow: 0 4px 14px rgba(28, 181, 175, 0.35);
+        }
+
+        .search-box {
+            position: relative;
+            min-width: 260px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 18px 10px 42px;
+            border-radius: var(--radius-full);
+            border: 1px solid var(--slate-200);
+            background: var(--white);
+            font-size: 14px;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-box input:focus {
+            border-color: var(--brand-teal);
+            box-shadow: 0 0 0 3px rgba(28, 181, 175, 0.15);
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--slate-400);
+            font-size: 14px;
+        }
+
+        .products-grid {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--teal-200);
+        }
+
+        .card-cover-wrap {
+            position: relative;
+            background: #f1f8f8;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .card-cover-img {
+            height: 250px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0 14px 28px -6px rgba(15, 23, 42, 0.18);
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover .card-cover-img {
+            transform: scale(1.05) rotate(-1.5deg);
+        }
+
+        .badge-label {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: linear-gradient(135deg, var(--brand-peach), #f59e0b);
+            color: var(--white);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            box-shadow: 0 2px 6px rgba(245, 158, 11, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .format-badge {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(6px);
+            color: var(--white);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .product-body {
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 10px;
+        }
+
+        .product-category-text {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--brand-teal);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .product-title {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--slate-900);
+            line-height: 1.35;
+        }
+
+        .product-desc {
+            font-size: 13.5px;
+            color: var(--slate-500);
+            line-height: 1.55;
+            flex-grow: 1;
+        }
+
+        .target-readers {
+            background: var(--slate-50);
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 12px;
+            color: var(--slate-600);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border: 1px dashed var(--slate-200);
+        }
+
+        .target-readers i {
+            color: var(--brand-teal);
+        }
+
+        .product-pricing {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .curr-price {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ea580c;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .strike-price {
+            font-size: 14px;
+            color: var(--slate-400);
+            text-decoration: line-through;
+        }
+
+        .product-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn-card-buy {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            border: none;
+            padding: 10px 12px;
+            border-radius: var(--radius-full);
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.25);
+            transition: var(--transition);
+        }
+
+        .btn-card-buy:hover {
+            background: linear-gradient(135deg, #22bf5b, #0e7266);
+            transform: translateY(-2px);
+            color: var(--white);
+        }
+
+        .btn-card-detail {
+            background: var(--slate-100);
+            color: var(--slate-700);
+            border: 1px solid var(--slate-200);
+            padding: 10px 12px;
+            border-radius: var(--radius-full);
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: var(--transition);
+        }
+
+        .btn-card-detail:hover {
+            background: var(--teal-50);
+            color: var(--brand-teal);
+            border-color: var(--teal-200);
+        }
+
+        /* --- Layanan & Produk Edukasi (Section E) --- */
+        .services-section {
+            background: linear-gradient(180deg, var(--white) 0%, var(--teal-50) 100%);
+        }
+
+        .services-grid {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            padding: 30px;
+            border: 1px solid var(--slate-200);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--brand-teal);
+        }
+
+        .service-icon-wrap {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(28, 181, 175, 0.15), rgba(249, 176, 84, 0.2));
+            color: var(--brand-teal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+        }
+
+        .service-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--slate-900);
+        }
+
+        .service-desc {
+            font-size: 14.5px;
+            color: var(--slate-600);
+            line-height: 1.6;
+        }
+
+        .service-tag {
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            width: fit-content;
+        }
+
+        .tag-active {
+            background: #dcfce7;
+            color: #15803d;
+        }
+
+        .tag-soon {
+            background: #fef3c7;
+            color: #b45309;
+        }
+
+        /* Disclaimer Banner */
+        .disclaimer-banner {
+            max-width: 1240px;
+            margin: 45px auto 0;
+            background: #fffbeb;
+            border-left: 5px solid #f59e0b;
+            padding: 20px 24px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .disclaimer-banner i {
+            color: #d97706;
+            font-size: 24px;
+            margin-top: 2px;
+        }
+
+        .disclaimer-text h5 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 4px;
+        }
+
+        .disclaimer-text p {
+            font-size: 13.5px;
+            color: #78350f;
+            line-height: 1.5;
+        }
+
+        /* --- Alur Pembelian E-Book (Step By Step) --- */
+        .order-flow-section {
+            background: var(--white);
+        }
+
+        .flow-steps-grid {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            position: relative;
+        }
+
+        .flow-step-card {
+            background: var(--slate-50);
+            border-radius: var(--radius-md);
+            padding: 26px 18px;
+            text-align: center;
+            border: 1px solid var(--slate-200);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .flow-step-card:hover {
+            background: var(--white);
+            transform: translateY(-6px);
+            border-color: var(--brand-teal);
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-number {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--brand-teal), #0f766e);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 18px;
+            margin: 0 auto 16px;
+            box-shadow: 0 4px 12px rgba(28, 181, 175, 0.35);
+        }
+
+        .step-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 8px;
+        }
+
+        .step-desc {
+            font-size: 13px;
+            color: var(--slate-500);
+            line-height: 1.5;
+        }
+
+        /* --- Tentang Nursetingle & Profil Pengelola --- */
+        .about-section {
+            background: radial-gradient(circle at top right, rgba(204, 251, 241, 0.4) 0%, #ffffff 70%);
+        }
+
+        .about-grid {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .about-story-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            border: 1px solid var(--slate-200);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .about-lead-title {
+            font-size: 26px;
+            color: var(--slate-900);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .about-story-text {
+            font-size: 15.5px;
+            color: var(--slate-600);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .vision-mission-box {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .vm-card {
+            background: var(--teal-50);
+            border-left: 4px solid var(--brand-teal);
+            padding: 18px 20px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+
+        .vm-card h4 {
+            font-size: 17px;
+            color: var(--brand-teal-dark);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vm-card p,
+        .vm-card li {
+            font-size: 14px;
+            color: var(--slate-700);
+            line-height: 1.6;
+        }
+
+        .vm-card ul {
+            padding-left: 20px;
+            margin-top: 6px;
+        }
+
+        /* Profil Pengelola Card */
+        .profile-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            border: 1px solid var(--slate-200);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .founder-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .founder-avatar-wrap {
+            position: relative;
+        }
+
+        .founder-avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--brand-teal);
+            box-shadow: 0 8px 20px rgba(28, 181, 175, 0.25);
+        }
+
+        .founder-badge-verify {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: var(--brand-peach);
+            color: var(--white);
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            border: 2px solid var(--white);
+        }
+
+        .founder-title-info h3 {
+            font-size: 22px;
+            color: var(--slate-900);
+        }
+
+        .founder-title-info p {
+            font-size: 14px;
+            color: var(--brand-teal);
+            font-weight: 600;
+        }
+
+        .founder-bio-text {
+            font-size: 14.5px;
+            color: var(--slate-600);
+            line-height: 1.7;
+        }
+
+        .founder-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .fh-item {
+            background: var(--slate-50);
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--slate-200);
+        }
+
+        .fh-item span {
+            font-size: 12px;
+            color: var(--slate-500);
+            display: block;
+        }
+
+        .fh-item strong {
+            font-size: 13.5px;
+            color: var(--slate-800);
+        }
+
+        .location-box {
+            background: #fff8eb;
+            border: 1px solid #fed7aa;
+            padding: 16px 20px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .location-box i {
+            color: #ea580c;
+            font-size: 20px;
+            margin-top: 3px;
+        }
+
+        .location-text h5 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #9a3412;
+            margin-bottom: 2px;
+        }
+
+        .location-text p {
+            font-size: 13px;
+            color: #7c2d12;
+            line-height: 1.45;
+        }
+
+        /* --- FAQ Section --- */
+        .faq-section {
+            background: #f8fafc;
+        }
+
+        .faq-list {
+            max-width: 820px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--slate-200);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-question {
+            padding: 20px 24px;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--slate-900);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .faq-question i {
+            color: var(--brand-teal);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+            padding: 0 24px;
+            color: var(--slate-600);
+            font-size: 14.5px;
+            line-height: 1.65;
+            background: #fafcfe;
+        }
+
+        .faq-item.open {
+            border-color: var(--teal-400);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-item.open .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 250px;
+            padding: 0 24px 20px;
+        }
+
+        /* --- Footer & Social Hub --- */
+        .main-footer {
+            background: #092c2b;
+            color: var(--white);
+            padding: 70px 24px 24px;
+            position: relative;
+        }
+
+        .footer-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-brand h3 {
+            font-size: 26px;
+            color: var(--white);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-brand p {
+            color: #99d2cf;
+            font-size: 14.5px;
+            line-height: 1.7;
+            max-width: 360px;
+            margin-bottom: 20px;
+        }
+
+        .social-button-row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .soc-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            transition: var(--transition);
+        }
+
+        .soc-btn:hover {
+            background: var(--brand-peach);
+            color: var(--slate-900);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h4,
+        .footer-contact h4 {
+            font-size: 18px;
+            color: var(--white);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-links h4::after,
+        .footer-contact h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 35px;
+            height: 2.5px;
+            background: var(--brand-peach);
+            border-radius: 2px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: #99d2cf;
+            font-size: 14.5px;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--brand-peach);
+            padding-left: 5px;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: #99d2cf;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .contact-item i {
+            color: var(--brand-peach);
+            font-size: 16px;
+            margin-top: 3px;
+        }
+
+        .contact-item a {
+            color: #99d2cf;
+            transition: var(--transition);
+        }
+
+        .contact-item a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            max-width: 1240px;
+            margin: 24px auto 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #6daaa6;
+            font-size: 13.5px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* --- Floating WhatsApp CTA with Glow & Tooltip --- */
+        .floating-wa-wrap {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .wa-tooltip {
+            background: var(--white);
+            color: var(--slate-800);
+            padding: 8px 14px;
+            border-radius: var(--radius-full);
+            font-size: 13px;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            animation: bounceTooltip 3s infinite ease-in-out;
+            cursor: pointer;
+        }
+
+        .wa-tooltip span {
+            color: #25D366;
+        }
+
+        @keyframes bounceTooltip {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+
+        .wa-floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .wa-floating-btn::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 2px solid #25D366;
+            animation: ripple 2s infinite ease-out;
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.4);
+                opacity: 0;
+            }
+        }
+
+        .wa-floating-btn:hover {
+            transform: scale(1.1);
+            color: var(--white);
+        }
+
+        /* --- Detail Modal Popup --- */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            max-width: 680px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            padding: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--slate-100);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: var(--slate-700);
+            transition: var(--transition);
+        }
+
+        .modal-close-btn:hover {
+            background: #fee2e2;
+            color: #ef4444;
+        }
+
+        .modal-body {
+            display: flex;
+            gap: 28px;
+            align-items: flex-start;
+        }
+
+        .modal-book-img {
+            width: 180px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+        }
+
+        .modal-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .modal-info h3 {
+            font-size: 22px;
+            color: var(--slate-900);
+        }
+
+        .modal-features-list {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        .modal-features-list li {
+            font-size: 13.5px;
+            color: var(--slate-600);
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .modal-features-list li i {
+            color: var(--brand-teal);
+        }
+
+        /* --- Toast Notification --- */
+        .toast-notify {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--white);
+            border-left: 4px solid var(--brand-teal);
+            padding: 14px 20px;
+            border-radius: var(--radius-sm);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            z-index: 3000;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transform: translateX(120%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .toast-notify.show {
+            transform: translateX(0);
+        }
+
+        /* --- Responsive Queries --- */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero-content {
+                align-items: center;
+            }
+
+            .hero-desc {
+                margin: 0 auto;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            .highlight-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .flow-steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 24px;
+                gap: 16px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+                display: none;
+            }
+
+            .nav-menu.show {
+                display: flex;
+            }
+
+            .nav-cta-btn {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 34px;
+            }
+
+            .hero-main-card img {
+                height: 380px;
+            }
+
+            .badge-left {
+                left: -10px;
+            }
+
+            .badge-right {
+                right: -10px;
+            }
+
+            .highlight-container {
+                grid-template-columns: 1fr;
+            }
+
+            .flow-steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-body {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .wa-tooltip {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <a href="#beranda" class="brand-logo-wrap">
+                <img src="assets/logo.jpg" alt="Nursetingle Id Logo" class="brand-logo-img">
+                <div class="brand-name-text">
+                    Nursetingle Id
+                    <span>Edukasi Keperawatan</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#beranda" class="active">Beranda</a></li>
+                    <li class="nav-item"><a href="#katalog">Katalog E-Book</a></li>
+                    <li class="nav-item"><a href="#layanan">Layanan & Materi</a></li>
+                    <li class="nav-item"><a href="#alur">Cara Pesan</a></li>
+                    <li class="nav-item"><a href="#tentang">Tentang Kami</a></li>
+                    <li class="nav-item"><a href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <a href="https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20tertarik%20dengan%20produk%20e-book%20keperawatan"
+                    target="_blank" class="nav-cta-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Chat Admin
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="beranda">
+        <div class="hero-blob-1"></div>
+        <div class="hero-blob-2"></div>
+
+        <div class="hero-container">
+            <!-- Left Info -->
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <i class="fa-solid fa-graduation-cap"></i> Teman Belajar & Berkarier di Dunia Keperawatan
+                </div>
+
+                <h1 class="hero-title">
+                    Belajar Keperawatan Jadi <span class="gradient-text">Lebih Mudah & Praktis</span> Bersama <span
+                        class="peach-highlight">Nursetingle</span>
+                </h1>
+
+                <p class="hero-desc">
+                    Nursetingle hadir sebagai ruang belajar digital yang membantu mahasiswa keperawatan dan perawat
+                    pemula memahami materi klinis, berlatih persiapan ujian UKOM, serta menguasai keterampilan klinik
+                    secara terstruktur dan fleksibel.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#katalog" class="btn-primary">
+                        <i class="fa-solid fa-book-open"></i> Jelajahi E-Book Sekarang
+                    </a>
+                    <a href="#tentang" class="btn-secondary">
+                        <i class="fa-solid fa-circle-info"></i> Kenali Nursetingle
+                    </a>
+                </div>
+
+                <!-- Chips Materi -->
+                <div class="hero-features-chips">
+                    <div class="chip-item">
+                        <i class="fa-solid fa-notes-medical"></i> Materi Keperawatan
+                    </div>
+                    <div class="chip-item">
+                        <i class="fa-solid fa-award"></i> Persiapan UKOM
+                    </div>
+                    <div class="chip-item">
+                        <i class="fa-solid fa-stethoscope"></i> OSCE & Keterampilan Klinik
+                    </div>
+                    <div class="chip-item">
+                        <i class="fa-solid fa-baby"></i> Edukasi NICU/PICU
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Visual Image -->
+            <div class="hero-visual-wrap">
+                <!-- Floating Badge 1 -->
+                <div class="hero-floating-badge badge-left">
+                    <div class="badge-icon teal">
+                        <i class="fa-solid fa-check-double"></i>
+                    </div>
+                    <div>
+                        <div class="badge-text-title">100% Sesuai Kisi-Kisi</div>
+                        <div class="badge-text-sub">Standar UKOM & OSCE Ners</div>
+                    </div>
+                </div>
+
+                <!-- Main Card -->
+                <div class="hero-main-card">
+                    <img src="assets/hero-nurse.jpg" alt="Edukasi Mahasiswa Keperawatan Nursetingle">
+                </div>
+
+                <!-- Floating Badge 2 -->
+                <div class="hero-floating-badge badge-right">
+                    <div class="badge-icon peach">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <div class="badge-text-title">Format PDF Instan</div>
+                        <div class="badge-text-sub">Bisa dibaca di HP & Tablet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Highlights Bar -->
+    <section class="highlight-bar-section">
+        <div class="highlight-container">
+            <div class="highlight-box">
+                <div class="highlight-icon-circle">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                </div>
+                <div class="highlight-info">
+                    <h4>Materi Terstruktur</h4>
+                    <p>Ringkas, mudah dipahami & fokus poin penting ujian</p>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <div class="highlight-icon-circle">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="highlight-info">
+                    <h4>Akses Digital Fleksibel</h4>
+                    <p>Format PDF jernih, siap baca kapan pun di mana pun</p>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <div class="highlight-icon-circle">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="highlight-info">
+                    <h4>Sumber Tepercaya</h4>
+                    <p>Disusun berdasarkan referensi klinis & kurikulum ners</p>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <div class="highlight-icon-circle">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="highlight-info">
+                    <h4>Fast Response Admin</h4>
+                    <p>Pemesanan langsung via WhatsApp ramah & cepat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalog E-Book Section -->
+    <section class="section-wrap catalog-section" id="katalog">
+        <div class="section-header">
+            <span class="section-badge">Koleksi Digital Pilihan</span>
+            <h2 class="section-title">Katalog E-Book & Materi Pembelajaran</h2>
+            <p class="section-subtitle">
+                Tingkatkan kompetensi akademik dan keterampilan klinik Anda dengan e-book panduan praktis yang telah
+                dirancang khusus untuk mahasiswa dan perawat.
+            </p>
+        </div>
+
+        <!-- Filter & Search Bar -->
+        <div class="catalog-controls">
+            <div class="category-filter-tabs">
+                <button class="tab-btn active" data-category="all">Semua E-book</button>
+                <button class="tab-btn" data-category="ukom">Persiapan UKOM</button>
+                <button class="tab-btn" data-category="osce">OSCE & Klinik</button>
+                <button class="tab-btn" data-category="nicu">NICU / PICU</button>
+                <button class="tab-btn" data-category="dasar">Dasar Keperawatan</button>
+            </div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Cari judul e-book...">
+            </div>
+        </div>
+
+        <!-- Grid Produk -->
+        <div class="products-grid" id="productsGrid">
+
+            <!-- E-Book 1: UKOM -->
+            <div class="product-card" data-category="ukom" data-title="Panduan Lulus UKOM Keperawatan Terpadu">
+                <div class="card-cover-wrap">
+                    <span class="badge-label">🔥 Best Seller</span>
+                    <span class="format-badge"><i class="fa-solid fa-file-pdf"></i> PDF</span>
+                    <img src="assets/ebook-ukom.jpg" alt="Panduan Lulus UKOM Keperawatan" class="card-cover-img">
+                </div>
+                <div class="product-body">
+                    <span class="product-category-text">Persiapan Ujian UKOM</span>
+                    <h3 class="product-title">Panduan Lulus UKOM Keperawatan</h3>
+                    <p class="product-desc">Strategi jitu menguasai 7 area kompetensi ners, bank soal prediksi
+                        terupdate, dan pembahasan rasional terstruktur.</p>
+
+                    <div class="target-readers">
+                        <i class="fa-solid fa-user-graduate"></i> Sasaran: Mahasiswa D3/Ners & Peserta UKOM
+                    </div>
+
+                    <div class="product-pricing">
+                        <span class="curr-price">Rp 50.000</span>
+                        <span class="strike-price">Rp 99.000</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-card-detail" onclick="openDetailModal('ukom')">
+                            <i class="fa-regular fa-eye"></i> Detail
+                        </button>
+                        <a href="https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20ingin%20memesan%20E-Book%20Panduan%20Lulus%20UKOM%20Keperawatan%20(Rp%2050.000).%20Mohon%20petunjuk%20pembayarannya%20ya."
+                            target="_blank" class="btn-card-buy">
+                            <i class="fa-brands fa-whatsapp"></i> Beli
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Book 2: OSCE -->
+            <div class="product-card" data-category="osce" data-title="Panduan OSCE & Keterampilan Klinik Keperawatan">
+                <div class="card-cover-wrap">
+                    <span class="badge-label">⚡ Wajib Punya</span>
+                    <span class="format-badge"><i class="fa-solid fa-file-pdf"></i> PDF</span>
+                    <img src="assets/ebook-osce.jpg" alt="Panduan OSCE dan Keterampilan Klinik" class="card-cover-img">
+                </div>
+                <div class="product-body">
+                    <span class="product-category-text">Keterampilan Klinik & OSCE</span>
+                    <h3 class="product-title">Panduan OSCE & Keterampilan Klinik</h3>
+                    <p class="product-desc">Checklist tindakan invasif & non-invasif, komunikasi terapeutik di station
+                        OSCE, serta SOP tindakan rumah sakit.</p>
+
+                    <div class="target-readers">
+                        <i class="fa-solid fa-user-doctor"></i> Sasaran: Mahasiswa Pre-Klinik & Profesi Ners
+                    </div>
+
+                    <div class="product-pricing">
+                        <span class="curr-price">Rp 45.000</span>
+                        <span class="strike-price">Rp 85.000</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-card-detail" onclick="openDetailModal('osce')">
+                            <i class="fa-regular fa-eye"></i> Detail
+                        </button>
+                        <a href="https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20ingin%20memesan%20E-Book%20Panduan%20OSCE%20%26%20Keterampilan%20Klinik%20(Rp%2045.000).%20Mohon%20info%20rekening%20pembayarannya."
+                            target="_blank" class="btn-card-buy">
+                            <i class="fa-brands fa-whatsapp"></i> Beli
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Book 3: NICU/PICU -->
+            <div class="product-card" data-category="nicu" data-title="Edukasi & Praktik NICU PICU Keperawatan">
+                <div class="card-cover-wrap">
+                    <span class="badge-label">⭐ Materi Khusus</span>
+                    <span class="format-badge"><i class="fa-solid fa-file-pdf"></i> PDF</span>
+                    <img src="assets/ebook-nicu.jpg" alt="Edukasi dan Praktik NICU PICU" class="card-cover-img">
+                </div>
+                <div class="product-body">
+                    <span class="product-category-text">Keperawatan Anak Kritis</span>
+                    <h3 class="product-title">Edukasi & Praktik NICU / PICU</h3>
+                    <p class="product-desc">Panduan komprehensif penanganan neonatus & pediatrik kritis, rumus dosis
+                        obat anak, resusitasi, dan monitoring ventilator.</p>
+
+                    <div class="target-readers">
+                        <i class="fa-solid fa-stethoscope"></i> Sasaran: Perawat Anak, Mahasiswa & Praktisi
+                    </div>
+
+                    <div class="product-pricing">
+                        <span class="curr-price">Rp 60.000</span>
+                        <span class="strike-price">Rp 110.000</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-card-detail" onclick="openDetailModal('nicu')">
+                            <i class="fa-regular fa-eye"></i> Detail
+                        </button>
+                        <a href="https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20ingin%20memesan%20E-Book%20Edukasi%20%26%20Praktik%20NICU%20PICU%20(Rp%2060.000).%20Terima%20kasih."
+                            target="_blank" class="btn-card-buy">
+                            <i class="fa-brands fa-whatsapp"></i> Beli
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Book 4: Buku Saku Dasar Keperawatan -->
+            <div class="product-card" data-category="dasar" data-title="Buku Saku Catatan Dasar Keperawatan">
+                <div class="card-cover-wrap">
+                    <span class="badge-label">📚 Pocket Guide</span>
+                    <span class="format-badge"><i class="fa-solid fa-file-pdf"></i> PDF</span>
+                    <img src="assets/ebook-dasar.jpg" alt="Buku Saku Dasar Keperawatan" class="card-cover-img">
+                </div>
+                <div class="product-body">
+                    <span class="product-category-text">Fondasi Keperawatan</span>
+                    <h3 class="product-title">Buku Saku Dasar Keperawatan</h3>
+                    <p class="product-desc">Kumpulan rumus infus, nilai normal tanda vital & lab, terminologi medis
+                        harian, dan tabel SDKI, SLKI, SIKI ringkas.</p>
+
+                    <div class="target-readers">
+                        <i class="fa-solid fa-book"></i> Sasaran: Mahasiswa Tingkat Awal & Perawat Baru
+                    </div>
+
+                    <div class="product-pricing">
+                        <span class="curr-price">Rp 40.000</span>
+                        <span class="strike-price">Rp 75.000</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-card-detail" onclick="openDetailModal('dasar')">
+                            <i class="fa-regular fa-eye"></i> Detail
+                        </button>
+                        <a href="https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20ingin%20memesan%20Buku%20Saku%20Dasar%20Keperawatan%20(Rp%2040.000).%20Terima%20kasih."
+                            target="_blank" class="btn-card-buy">
+                            <i class="fa-brands fa-whatsapp"></i> Beli
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Layanan & Produk Edukasi (Section Sesuai Rancangan E) -->
+    <section class="section-wrap services-section" id="layanan">
+        <div class="section-header">
+            <span class="section-badge">Ekosistem Belajar</span>
+            <h2 class="section-title">Produk & Layanan Edukasi Nursetingle</h2>
+            <p class="section-subtitle">
+                Fokus utama kami adalah edukasi keperawatan digital berkualitas tanpa batasan ruang dan waktu.
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <span class="service-tag tag-active">Tersedia Sekarang</span>
+                <h3 class="service-title">E-Book Digital Praktis</h3>
+                <p class="service-desc">Materi pembelajaran berbasis e-book format PDF resolusi tinggi yang dapat dibuka
+                    di smartphone, tablet, maupun laptop dengan bookmark otomatis.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <span class="service-tag tag-active">Tersedia Sekarang</span>
+                <h3 class="service-title">Modul Belajar Spesifik</h3>
+                <p class="service-desc">Bahan belajar ringkas berdasarkan topik tematik khusus seperti KMB (Medikal
+                    Bedah), Maternitas, Komunitas, Jiwa, dan Gawat Darurat.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-clipboard-question"></i>
+                </div>
+                <span class="service-tag tag-active">Tersedia Sekarang</span>
+                <h3 class="service-title">Bank Soal & Pembahasan</h3>
+                <p class="service-desc">Ratusan butir soal latihan berstandar Uji Kompetensi Nasional dengan telaah
+                    kunci jawaban dan pembahasan rasional terstruktur.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <span class="service-tag tag-active">Tersedia Sekarang</span>
+                <h3 class="service-title">Panduan Ujian OSCE</h3>
+                <p class="service-desc">Bahan belajar keterampilan klinik, runtutan prosedur kerja (SOP), serta etika
+                    komunikasi terapeutik menghadapi penguji OSCE.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <span class="service-tag tag-active">Aktif Setiap Hari</span>
+                <h3 class="service-title">Konten Edukasi Medsos</h3>
+                <p class="service-desc">Kuis harian, microlearning, tips rotasi dinas klinik, dan pembahasan istilah
+                    medis melalui Instagram & TikTok resmi @nursetingle.id.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <span class="service-tag tag-soon">Dalam Pengembangan</span>
+                <h3 class="service-title">Kelas & Mentoring Intensif</h3>
+                <p class="service-desc">Program bimbingan belajar interaktif bersama mentor perawat berpengalaman untuk
+                    persiapan UKOM dan transisi ke dunia kerja.</p>
+            </div>
+        </div>
+
+        <!-- Edu Disclaimer -->
+        <div class="disclaimer-banner">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <div class="disclaimer-text">
+                <h5>Pernyataan Edukasi Resmi (Educational Disclaimer)</h5>
+                <p>Seluruh materi, buku saku, dan konten e-book yang diterbitkan oleh Nursetingle merupakan sarana
+                    pembelajaran akademik mandiri dan suplemen belajar. Materi ini bukan pengganti pedoman tata laksana
+                    klinis resmi rumah sakit, bimbingan dosen/pembimbing klinik (CI), maupun program sertifikasi
+                    kompetensi profesi formal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alur Pembelian E-Book (Section 4) -->
+    <section class="section-wrap order-flow-section" id="alur">
+        <div class="section-header">
+            <span class="section-badge">Mudah & Cepat</span>
+            <h2 class="section-title">Skema Alur Pembelian E-Book</h2>
+            <p class="section-subtitle">
+                Hanya butuh 5 langkah mudah untuk mendapatkan modul dan e-book belajar langsung di perangkat Anda.
+            </p>
+        </div>
+
+        <div class="flow-steps-grid">
+            <div class="flow-step-card">
+                <div class="step-number">01</div>
+                <h4 class="step-title">Buka Website</h4>
+                <p class="step-desc">Kunjungi katalog Nursetingle dan pilih topik materi yang ingin dipelajari.</p>
+            </div>
+
+            <div class="flow-step-card">
+                <div class="step-number">02</div>
+                <h4 class="step-title">Pilih E-Book</h4>
+                <p class="step-desc">Pelajari deskripsi, daftar isi sampel, sasaran pembaca, dan harganya.</p>
+            </div>
+
+            <div class="flow-step-card">
+                <div class="step-number">03</div>
+                <h4 class="step-title">Tekan Tombol Beli</h4>
+                <p class="step-desc">Klik tombol WhatsApp untuk langsung terhubung dengan admin tanpa perlu repot
+                    mengetik format.</p>
+            </div>
+
+            <div class="flow-step-card">
+                <div class="step-number">04</div>
+                <h4 class="step-title">Pembayaran Mudah</h4>
+                <p class="step-desc">Lakukan transfer via Bank atau QRIS sesuai nomor rekening resmi yang diberikan
+                    admin.</p>
+            </div>
+
+            <div class="flow-step-card">
+                <div class="step-number">05</div>
+                <h4 class="step-title">E-Book Terkirim</h4>
+                <p class="step-desc">Tautan unduhan dan file PDF e-book langsung dikirimkan ke WhatsApp/Email Anda dalam
+                    hitungan menit!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Nursetingle & Profil Pengelola (Section C & D) -->
+    <section class="section-wrap about-section" id="tentang">
+        <div class="section-header">
+            <span class="section-badge">Mengenal Lebih Dekat</span>
+            <h2 class="section-title">Tentang Nursetingle</h2>
+            <p class="section-subtitle">
+                Teman Belajar, Berkembang, dan Berkarier di Dunia Keperawatan Indonesia
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <!-- Visi & Misi Story -->
+            <div class="about-story-card">
+                <h3 class="about-lead-title">
+                    <img src="assets/logo.jpg" alt="Logo" style="width: 38px; height: 38px; border-radius: 50%;">
+                    Cerita di Balik Nursetingle
+                </h3>
+                <p class="about-story-text">
+                    <strong>Nursetingle</strong> merupakan platform edukasi digital yang berfokus pada penyediaan materi
+                    belajar, e-book, dan sumber pembelajaran untuk mahasiswa keperawatan serta perawat pemula.
+                </p>
+                <p class="about-story-text">
+                    Kami percaya bahwa proses belajar di dunia keperawatan perlu didukung oleh materi yang
+                    <em>terstruktur, mudah dipahami, praktis,</em> dan relevan dengan kebutuhan pembelajaran maupun
+                    ujian klinis.
+                </p>
+                <p class="about-story-text">
+                    Melalui Nursetingle, kami ingin membantu mahasiswa dan ners memahami konsep esensial keperawatan,
+                    mempersiapkan diri menghadapi ujian UKOM & OSCE, mempelajari keterampilan klinik, dan terus
+                    mengembangkan kompetensi profesional sepanjang hayat.
+                </p>
+
+                <div class="vision-mission-box">
+                    <div class="vm-card">
+                        <h4><i class="fa-solid fa-eye"></i> Visi Kami</h4>
+                        <p>Menjadi platform edukasi keperawatan digital yang informatif, terpercaya, dan mudah diakses
+                            untuk mendukung pengembangan kompetensi tenaga keperawatan Indonesia.</p>
+                    </div>
+
+                    <div class="vm-card">
+                        <h4><i class="fa-solid fa-bullseye"></i> Misi Kami</h4>
+                        <ul>
+                            <li>Menyediakan e-book dan materi belajar keperawatan yang praktis dan terstruktur.</li>
+                            <li>Membantu mahasiswa keperawatan dalam mempersiapkan ujian dan pembelajaran klinik.</li>
+                            <li>Mendukung budaya belajar berkelanjutan bagi mahasiswa dan perawat pemula.</li>
+                            <li>Memanfaatkan media digital untuk memperluas akses terhadap edukasi keperawatan ke
+                                seluruh penjuru Nusantara.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profil Pengelola Card -->
+            <div class="profile-card">
+                <div class="founder-header">
+                    <div class="founder-avatar-wrap">
+                        <img src="assets/logo.jpg" alt="Foto Pengelola Nursetingle" class="founder-avatar">
+                        <div class="founder-badge-verify">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="founder-title-info">
+                        <h3>Pengelola Nursetingle</h3>
+                        <p><i class="fa-solid fa-user-tie"></i> Pendiri & Tim Edukasi Nursetingle Id</p>
+                    </div>
+                </div>
+
+                <p class="founder-bio-text">
+                    Memiliki dedikasi dan minat mendalam dalam bidang edukasi keperawatan, pengembangan bahan
+                    pembelajaran digital, serta pendampingan mahasiswa dan ners pemula dalam meningkatkan kompetensi
+                    klinis.
+                </p>
+                <p class="founder-bio-text">
+                    Melalui Nursetingle, kami berkomitmen menyediakan sumber belajar digital yang membantu proses
+                    belajar menjadi lebih terarah, tidak membingungkan, dan aplikatif.
+                </p>
+
+                <div class="founder-highlights">
+                    <div class="fh-item">
+                        <span>Fokus Keahlian</span>
+                        <strong>Edukasi & Media Keperawatan</strong>
+                    </div>
+                    <div class="fh-item">
+                        <span>Komitmen Layanan</span>
+                        <strong>Materi Terstruktur & Akurat</strong>
+                    </div>
+                    <div class="fh-item">
+                        <span>Platform Media</span>
+                        <strong>Instagram, TikTok, WhatsApp</strong>
+                    </div>
+                    <div class="fh-item">
+                        <span>Format Modul</span>
+                        <strong>E-Book Digital HD (PDF)</strong>
+                    </div>
+                </div>
+
+                <!-- Info Lokasi Pengelolaan Sesuai Poin 3 Prompt -->
+                <div class="location-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="location-text">
+                        <h5>Lokasi Pusat Pengelolaan & Operasional</h5>
+                        <p><strong>Tangerang Selatan, Banten, Indonesia</strong></p>
+                        <p style="font-size: 11.5px; color: #9a3412; margin-top: 4px;">
+                            *Nursetingle beroperasi secara penuh sebagai platform digital untuk pemesanan e-book dan
+                            edukasi online.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-wrap faq-section" id="faq">
+        <div class="section-header">
+            <span class="section-badge">Paling Sering Ditanyakan</span>
+            <h2 class="section-title">Pertanyaan Seputar Produk & Pemesanan</h2>
+            <p class="section-subtitle">
+                Temukan jawaban cepat mengenai pembelian e-book dan sistem belajar di Nursetingle.
+            </p>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>1. Bagaimana cara saya menerima file e-book setelah membayar?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Setelah Anda melakukan konfirmasi transfer melalui WhatsApp, admin Nursetingle akan langsung
+                    mengirimkan link unduhan Google Drive / file dokumen PDF langsung ke ruang obrolan WhatsApp atau
+                    email Anda dalam waktu 5-15 menit.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>2. Apakah e-book ini bisa dibuka di smartphone atau laptop?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Bisa sekali! E-book Nursetingle berformat PDF standar universal yang kompatibel di semua perangkat
+                    (Android, iPhone, iPad/Tablet, Windows, Mac). Anda juga bebas mencetaknya (print out) untuk
+                    kebutuhan belajar pribadi.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>3. Apakah pembayarannya hanya bisa via WhatsApp?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Untuk tahap awal, kami melayani pemesanan langsung melalui WhatsApp agar konsultasi pemilihan judul
+                    buku lebih personal dan ramah. Kami menyediakan pembayaran melalui Transfer Bank Nasional (BCA,
+                    Mandiri, BRI, BNI) serta QRIS (GoPay, OVO, Dana, ShopeePay).
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>4. Apakah materi di e-book UKOM selalu diperbarui?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Ya, tim Nursetingle terus meninjau dan memperbarui kisi-kisi soal serta materi berdasarkan
+                    perkembangan pedoman standar kompetensi perawat Indonesia terkini.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer class="main-footer" id="kontak">
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <h3>
+                    <img src="assets/logo.jpg" alt="Logo" style="width: 32px; height: 32px; border-radius: 50%;">
+                    Nursetingle Id
+                </h3>
+                <p>
+                    Teman belajar, berkembang, dan berkarier di dunia keperawatan. Menyediakan e-book berkualitas untuk
+                    menyongsong kelulusan UKOM, OSCE, dan kesiapan praktik klinis.
+                </p>
+                <div class="social-button-row">
+                    <a href="https://www.instagram.com/nursetingle.id?psln=NW5ybTBuMmRudG9q" target="_blank"
+                        class="soc-btn" title="Instagram @nursetingle.id">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@nursetingle_?_r=1&_t=ZS-9AcgYjKb701" target="_blank"
+                        class="soc-btn" title="TikTok @nursetingle_">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/6285697073252" target="_blank" class="soc-btn" title="WhatsApp Nursetingle">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Nav Links Column -->
+            <div class="footer-links">
+                <h4>Menu Cepat</h4>
+                <ul>
+                    <li><a href="#beranda">Beranda Utama</a></li>
+                    <li><a href="#katalog">Katalog E-Book</a></li>
+                    <li><a href="#layanan">Layanan & Produk Edukasi</a></li>
+                    <li><a href="#alur">Skema Cara Beli</a></li>
+                    <li><a href="#tentang">Visi & Misi Kami</a></li>
+                    <li><a href="#faq">Tanya Jawab (FAQ)</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Column -->
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <ul class="footer-contact-list">
+                    <li class="contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp Resmi Admin:</strong><br>
+                            <a href="https://wa.me/6285697073252" target="_blank">+62 856-9707-3252</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div>
+                            <strong>Instagram:</strong><br>
+                            <a href="https://www.instagram.com/nursetingle.id?psln=NW5ybTBuMmRudG9q"
+                                target="_blank">@nursetingle.id</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <div>
+                            <strong>TikTok Edukasi:</strong><br>
+                            <a href="https://www.tiktok.com/@nursetingle_?_r=1&_t=ZS-9AcgYjKb701"
+                                target="_blank">@nursetingle_</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Lokasi Pengelolaan:</strong><br>
+                            Tangerang Selatan, Banten, Indonesia
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>
+                &copy; 2026 <strong>Nursetingle Id</strong>. All rights reserved. Platform Edukasi Keperawatan
+                Indonesia.
+            </div>
+            <div>
+                Dibuat khusus untuk mendukung kemajuan Ners Indonesia 🩺✨
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA Button -->
+    <div class="floating-wa-wrap">
+        <div class="wa-tooltip"
+            onclick="window.open('https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20mau%20tanya%20seputar%20e-book%20keperawatan', '_blank')">
+            <span>Online</span> Chat Admin WA 👋
+        </div>
+        <a href="https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20mau%20tanya%20seputar%20e-book%20keperawatan"
+            target="_blank" class="wa-floating-btn" aria-label="Hubungi WhatsApp Nursetingle">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Modal Detail E-Book -->
+    <div class="modal-overlay" id="detailModal">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+            <div class="modal-body">
+                <img src="assets/ebook-ukom.jpg" alt="Cover" class="modal-book-img" id="modalImg">
+                <div class="modal-info">
+                    <span class="product-category-text" id="modalCat">Kategori E-Book</span>
+                    <h3 id="modalTitle">Judul E-Book</h3>
+                    <p class="product-desc" id="modalDesc">Deskripsi isi e-book.</p>
+
+                    <ul class="modal-features-list" id="modalList">
+                        <!-- Loaded dynamically -->
+                    </ul>
+
+                    <div class="product-pricing">
+                        <span class="curr-price" id="modalPrice">Rp 50.000</span>
+                        <span class="strike-price" id="modalOldPrice">Rp 99.000</span>
+                    </div>
+
+                    <a href="#" id="modalBuyBtn" target="_blank" class="btn-primary" style="margin-top: 10px;">
+                        <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notify" id="toastNotify">
+        <i class="fa-solid fa-circle-check" style="color: var(--brand-teal); font-size: 20px;"></i>
+        <div>
+            <strong id="toastTitle">Berhasil</strong>
+            <p id="toastMsg" style="font-size: 13px; color: var(--slate-600); margin: 0;">Pesan terkirim</p>
+        </div>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Data Details for Modal
+        const ebookDetails = {
+            ukom: {
+                title: "Panduan Lulus UKOM Keperawatan",
+                category: "Persiapan Ujian UKOM",
+                img: "assets/ebook-ukom.jpg",
+                desc: "Kompilasi panduan taktis menghadapi Uji Kompetensi Keperawatan Nasional (D3 & Ners). Dilengkapi ringkasan 7 area kompetensi ners, strategi analisis soal vignet, dan kata kunci cepat (clue) eliminasi jawaban.",
+                price: "Rp 50.000",
+                oldPrice: "Rp 99.000",
+                features: [
+                    "Kumpulan 300+ soal prediksi berbobot UKOM terbaru",
+                    "Pembahasan rasional ilmiah dan rujukan SDKI, SIKI, SLKI",
+                    "Rumus cepat eliminasi opsi jebakan pada soal vignet",
+                    "Format PDF printable siap dibaca di gadget maupun dicetak"
+                ],
+                waLink: "https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20ingin%20memesan%20E-Book%20Panduan%20Lulus%20UKOM%20Keperawatan%20(Rp%2050.000).%20Bisa%20dibantu%20cara%20pembayarannya?"
+            },
+            osce: {
+                title: "Panduan OSCE & Keterampilan Klinik",
+                category: "Keterampilan Klinik & OSCE",
+                img: "assets/ebook-osce.jpg",
+                desc: "Pedoman persiapan ujian praktik OSCE dan keterampilan klinik mahasiswa keperawatan. Berisi checklist langkah demi langkah tindakan medis, standar operasional prosedur (SOP), dan simulasi skenario station.",
+                price: "Rp 45.000",
+                oldPrice: "Rp 85.000",
+                features: [
+                    "Checklist lengkap tindakan keperawatan (pemasangan infus, NGT, kateter, dll)",
+                    "Panduan komunikasi terapeutik interpersonal pada station ujian",
+                    "Rubrik penilaian penguji dan tips menghindari pengurangan poin",
+                    "Diagram posisi dan tata letak alat alat tindakan"
+                ],
+                waLink: "https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20ingin%20memesan%20E-Book%20Panduan%20OSCE%20%26%20Keterampilan%20Klinik%20(Rp%2045.000).%20Terima%20kasih!"
+            },
+            nicu: {
+                title: "Edukasi & Praktik NICU / PICU",
+                category: "Keperawatan Anak Kritis",
+                img: "assets/ebook-nicu.jpg",
+                desc: "Modul esensial bagi perawat dan mahasiswa yang berfokus pada perawatan intensif neonatal dan pediatrik (NICU/PICU). Membahas tuntas pemantauan tanda kegawatan bayi, rumus tetesan infus mikro, dan asuhan keperawatan kritis.",
+                price: "Rp 60.000",
+                oldPrice: "Rp 110.000",
+                features: [
+                    "Panduan resusitasi neonatus dan penilaian skor APGAR / Downes",
+                    "Kalkulasi dosis obat anestesi dan inotropik spesifik pediatrik",
+                    "Manajemen jalan napas dan monitoring ventilator mekanik",
+                    "E-book referensi praktis untuk dinas ruang intensif anak"
+                ],
+                waLink: "https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20ingin%20memesan%20E-Book%20Edukasi%20%26%20Praktik%20NICU%20PICU%20(Rp%2060.000).%20Mohon%20petunjuk%20pembayaran."
+            },
+            dasar: {
+                title: "Buku Saku Dasar Keperawatan",
+                category: "Fondasi Keperawatan",
+                img: "assets/ebook-dasar.jpg",
+                desc: "Buku saku digital andalan mahasiswa baru dan perawat pemula. Merangkum seluruh nilai normal laboratorium, rumus hitung tetes infus mikro/makro, posisi pemeriksaan fisik, dan tabel diagnosa keperawatan dasar.",
+                price: "Rp 40.000",
+                oldPrice: "Rp 75.000",
+                features: [
+                    "Tabel ringkas nilai normal TTV dan hasil laboratorium darah",
+                    "Rumus perhitungan cairan luka bakar (Baxter/Parkland) & tetes infus",
+                    "Pedoman pengkajian Head-to-Toe dan dokumentasi SOAP",
+                    "Ukuran praktis mudah dibaca langsung dari HP saat rotasi dinas"
+                ],
+                waLink: "https://wa.me/6285697073252?text=Halo%20Admin%20Nursetingle%20Id,%20saya%20ingin%20memesan%20Buku%20Saku%20Dasar%20Keperawatan%20(Rp%2040.000).%20Mohon%20rekening%20transfernya."
+            }
+        };
+
+        // Modal Elements
+        const modal = document.getElementById('detailModal');
+        const modalCloseBtn = document.getElementById('modalCloseBtn');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalCat = document.getElementById('modalCat');
+        const modalImg = document.getElementById('modalImg');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalList = document.getElementById('modalList');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalOldPrice = document.getElementById('modalOldPrice');
+        const modalBuyBtn = document.getElementById('modalBuyBtn');
+
+        function openDetailModal(key) {
+            const data = ebookDetails[key];
+            if (!data) return;
+
+            modalTitle.textContent = data.title;
+            modalCat.textContent = data.category;
+            modalImg.src = data.img;
+            modalDesc.textContent = data.desc;
+            modalPrice.textContent = data.price;
+            modalOldPrice.textContent = data.oldPrice;
+            modalBuyBtn.href = data.waLink;
+
+            modalList.innerHTML = '';
+            data.features.forEach(feat => {
+                const li = document.createElement('li');
+                li.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${feat}`;
+                modalList.appendChild(li);
+            });
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        modalCloseBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Category Filter Tabs
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const cat = btn.getAttribute('data-category');
+
+                productCards.forEach(card => {
+                    if (cat === 'all' || card.getAttribute('data-category') === cat) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search Input Filter
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            productCards.forEach(card => {
+                const title = card.getAttribute('data-title').toLowerCase();
+                const desc = card.querySelector('.product-desc').textContent.toLowerCase();
+                if (title.includes(query) || desc.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                faqItems.forEach(i => i.classList.remove('open'));
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // Mobile Nav Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+
+        // Close mobile nav on link click
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+            });
+        });
+
+        // Smooth active navigation indicator on scroll
+        const sections = document.querySelectorAll('section, footer');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(sec => {
+                const secTop = sec.offsetTop - 120;
+                if (pageYOffset >= secTop) {
+                    current = sec.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
